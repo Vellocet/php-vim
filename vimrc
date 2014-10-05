@@ -12,7 +12,6 @@ set wildmode=longest:list,full
 syntax on
 set hlsearch
 set backspace=indent,eol,start
-set mouse=a
 command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
       \ | wincmd p | diffthis
 filetype off 
