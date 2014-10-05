@@ -12,6 +12,10 @@ set wildmode=longest:list,full
 syntax on
 set hlsearch
 set backspace=indent,eol,start
+
+" Highlight tabs
+hi TabLineSel ctermfg=Black ctermbg=LightGray
+
 command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
       \ | wincmd p | diffthis
 filetype off 
