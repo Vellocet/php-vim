@@ -35,6 +35,9 @@ Plugin 'tobyS/pdv'
 " Vmustache
 Plugin 'tobyS/vmustache'
 
+" Ultisnips
+Plugin 'SirVer/ultisnips'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -43,4 +46,4 @@ let mapleader = ","
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
-nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
+nnoremap <C-p> :call pdv#DocumentWithSnip()<CR>
