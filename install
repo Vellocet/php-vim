@@ -1,0 +1,8 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+rm ~/.vimrc
+rm -rf ~/.vim/
+cp vimrc ~/.vimrc
+mkdir ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim -c PluginInstall 
