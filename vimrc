@@ -41,6 +41,9 @@ Plugin 'tobyS/vmustache'
 " Ultisnips
 Plugin 'SirVer/ultisnips'
 
+" Twig support
+Plugin 'evidens/vim-twig.git'
+
 call vundle#end()
 filetype plugin indent on
 
